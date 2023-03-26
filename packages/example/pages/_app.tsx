@@ -39,6 +39,7 @@ import {
   avalanche,
   baseGoerli,
   bsc,
+  edgeware,
   goerli,
   mainnet,
   optimism,
@@ -58,6 +59,7 @@ const { chains, provider, webSocketProvider } = configureChains(
     arbitrum,
     bsc,
     avalanche,
+    edgeware,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true'
       ? [goerli, baseGoerli]
       : []),
